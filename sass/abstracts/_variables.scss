@@ -1,0 +1,40 @@
+// COLORS
+$color-primary: #e67e22;
+
+$color-tint-light: #fdf2e9;
+$color-tint-medium: #fae5d3;
+$color-tint-dark: #eb984e;
+
+$color-shade-dark-1: #cf711f;
+$color-shade-dark-2: #45260a;
+
+$color-grey-light-1: #767676; //(lightest grey allowed on #fff)
+$color-grey-light-2: #6f6f6f; //(lightest grey allowed on #fdf2e9)
+
+$color-grey-dark-1: #888;
+$color-grey-dark-2: #555;
+$color-grey-dark-3: #333;
+
+// FONT WEIGHTS
+$font-weight-default: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// LINE HEIGHTS
+$line-height-default: 1;
+$line-height-small: 1.05;
+$line-height-medium: 1.2;
+$line-height-paragraph: 1.6;
+$line-height-large: 1.8;
+
+//LETTER SPACING
+$line-spacing-1: -0.5px;
+$line-spacing-2: -0.75px;
+
+//BORDER RADIUS
+$border-radius-default: 9px;
+$border-radius-medium: 11px;
+
+//SHADOWS
+$shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
