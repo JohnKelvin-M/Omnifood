@@ -1,0 +1,23 @@
+.section-hero {
+  background-color: $color-tint-light;
+  padding: 9.6rem 0;
+
+  .hero {
+    align-items: center;
+    display: grid;
+    gap: 9.6rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 130rem;
+
+    &__description {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-bottom: 4.8rem;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+}

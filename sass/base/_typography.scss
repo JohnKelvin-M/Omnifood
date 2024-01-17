@@ -7,8 +7,17 @@ FONT SIZE SYSTEM (px)
 */
 
 body {
-  font-family: sans-serif;
-  line-height: $line-height-default;
-  font-weight: $font-weight-default;
   color: $color-grey-dark-2;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: $line-height-default;
+}
+
+.heading-primary {
+  color: $color-grey-dark-3;
+  font-size: 5.2rem;
+  font-weight: 700;
+  letter-spacing: $letter-spacing-1;
+  line-height: $line-height-small;
+  margin-bottom: 3.2rem;
 }
