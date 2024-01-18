@@ -1,0 +1,52 @@
+.step {
+  &__number {
+    color: #ddd;
+    font-size: 8.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    line-height: $line-height-large;
+  }
+
+  &__img-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+    
+    &::before {
+      content: "";
+      background-color: $color-tint-light;
+      width: 60%;
+      // height: 60%;
+      padding-bottom: 60%; //60% of parent's width
+      z-index: -2;
+    }
+
+    &::after {
+      background-color: $color-tint-medium;
+      width: 45%;
+      // height: 60%;
+      padding-bottom: 45%; //60% of parent's width
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    width: 35%;
+  }
+}
