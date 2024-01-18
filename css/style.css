@@ -137,6 +137,21 @@ body {
 .step__img {
   width: 35%; }
 
+.hero {
+  align-items: center;
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  max-width: 130rem;
+  padding: 0 3.2rem; }
+  .hero__description {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem; }
+  .hero__img {
+    width: 100%; }
+
 .delivered-meals {
   align-items: center;
   display: flex;
@@ -210,20 +225,6 @@ body {
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0; }
-  .section-hero .hero {
-    align-items: center;
-    display: grid;
-    gap: 9.6rem;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    max-width: 130rem;
-    padding: 0 3.2rem; }
-    .section-hero .hero__description {
-      font-size: 2rem;
-      line-height: 1.5;
-      margin-bottom: 4.8rem; }
-    .section-hero .hero__img {
-      width: 100%; }
 
 .section-featured {
   padding: 4.8rem 0; }
