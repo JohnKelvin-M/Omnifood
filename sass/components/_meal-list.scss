@@ -1,0 +1,19 @@
+.meal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+
+  &__item {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+  }
+
+  &__icon {
+    color: $color-primary;
+    height: 3rem;
+    width: 3rem;
+  }
+}

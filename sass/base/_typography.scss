@@ -13,6 +13,10 @@ body {
   line-height: $line-height-default;
 }
 
+strong {
+  font-weight: 500;
+}
+
 .heading-primary,
 .heading-seondary,
 .heading-tertiary {
@@ -47,4 +51,22 @@ body {
   letter-spacing: $letter-spacing-2;
   margin-bottom: 1.6rem;
   text-transform: uppercase;
+}
+
+.link {
+  &:link,
+  &:visited {
+    color: $color-primary;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-shade-dark-1;
+    border-bottom: 1px solid transparent;
+  }
 }

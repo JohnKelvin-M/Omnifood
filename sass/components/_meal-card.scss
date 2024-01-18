@@ -1,0 +1,74 @@
+.meal__card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: $border-radius-medium;
+  overflow: hidden;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__tag {
+    border-radius: 100px;
+    color: $color-grey-dark-3;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    text-transform: uppercase;
+
+    &--vegeterian {
+      background-color: #51cf66;
+    }
+
+    &--vegan {
+      background-color: #94d82d;
+    }
+
+    &--paleo {
+      background-color: #fcc419;
+    }
+  }
+
+  &__title {
+    color: $color-grey-dark-3;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+  }
+
+  &__attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__attribute {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+  }
+
+  &__icon {
+    color: $color-primary;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+}
