@@ -120,43 +120,19 @@ strong {
     height: 3.2rem;
     opacity: 50%; }
 
-.step__number {
-  color: #ddd;
-  font-size: 8.6rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem; }
-
-.step__description {
-  font-size: 1.8rem;
-  line-height: 1.8; }
-
-.step__img-box {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: relative; }
-  .step__img-box::before, .step__img-box::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%; }
-  .step__img-box::before {
-    content: "";
-    background-color: #fdf2e9;
-    width: 60%;
-    padding-bottom: 60%;
-    z-index: -2; }
-  .step__img-box::after {
-    background-color: #fae5d3;
-    width: 45%;
-    padding-bottom: 45%;
-    z-index: -1; }
-
-.step__img {
-  width: 35%; }
+.gallery {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.6rem; }
+  .gallery__item {
+    overflow: hidden; }
+    .gallery__item img {
+      display: block;
+      width: 100%;
+      transition: all 0.4s; }
+      .gallery__item img:hover {
+        transform: scale(1.1); }
 
 .hero {
   align-items: center;
@@ -237,6 +213,63 @@ strong {
     color: #e67e22;
     height: 3rem;
     width: 3rem; }
+
+.step__number {
+  color: #ddd;
+  font-size: 8.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem; }
+
+.step__description {
+  font-size: 1.8rem;
+  line-height: 1.8; }
+
+.step__img-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .step__img-box::before, .step__img-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; }
+  .step__img-box::before {
+    content: "";
+    background-color: #fdf2e9;
+    width: 60%;
+    padding-bottom: 60%;
+    z-index: -2; }
+  .step__img-box::after {
+    background-color: #fae5d3;
+    width: 45%;
+    padding-bottom: 45%;
+    z-index: -1; }
+
+.step__img {
+  width: 35%; }
+
+.testimonials {
+  display: grid;
+  column-gap: 8rem;
+  row-gap: 4.8rem;
+  grid-template-columns: repeat(2, 1fr); }
+  .testimonials__container {
+    padding: 9.6rem; }
+  .testimonials .testimonial__img {
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    width: 6.4rem; }
+  .testimonials .testimonial__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem; }
+  .testimonials .testimonial__name {
+    color: #6f6f6f;
+    font-size: 1.6rem; }
 
 .delivered-meals {
   align-items: center;
@@ -324,3 +357,9 @@ strong {
 .all-recipes {
   text-align: center;
   font-size: 1.8rem; }
+
+.section-testimonials {
+  align-items: center;
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr; }
