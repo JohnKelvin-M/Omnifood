@@ -10,3 +10,9 @@ html {
   font-size: 62.5%;
 }
 
+*:focus {
+  outline: none;
+  // outline: 4px dotted $color-primary;
+  // outline-offset: 8px;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}

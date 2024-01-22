@@ -8,6 +8,10 @@
 html {
   font-size: 62.5%; }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5); }
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -80,8 +84,11 @@ strong {
   text-align: center; }
 
 .btn, .btn:link, .btn:visited {
+  border: none;
   border-radius: 9px;
+  cursor: pointer;
   display: inline-block;
+  font-family: inherit;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
@@ -102,6 +109,64 @@ strong {
 .btn--outline:hover, .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff; }
+
+.btn--form {
+  align-self: end;
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 1.2rem; }
+  .btn--form:hover {
+    background-color: #fff;
+    color: #333; }
+
+.cta {
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow: hidden; }
+  .cta__text-box {
+    color: #45260a;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem; }
+    .cta__text-box .heading-secondary {
+      color: inherit;
+      margin-bottom: 3.2rem; }
+  .cta__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem; }
+  .cta__img-box {
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center; }
+  .cta__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 2.4rem; }
+    .cta__form label {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem; }
+    .cta__form input,
+    .cta__form select {
+      background-color: #fdf2e9;
+      border-radius: 9px;
+      border: none;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      color: inherit;
+      font-family: inherit;
+      font-size: 1.8rem;
+      padding: 1.2rem;
+      width: 100%; }
+      .cta__form input::placeholder,
+      .cta__form select::placeholder {
+        color: #aaa; }
+  .cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); }
 
 .featured-in__heading {
   color: #888;
@@ -454,4 +519,7 @@ strong {
   grid-template-columns: 55fr 45fr; }
 
 .section-pricing {
+  padding: 9.6rem 0; }
+
+.section-cta {
   padding: 9.6rem 0; }
