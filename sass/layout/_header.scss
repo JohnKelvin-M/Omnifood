@@ -7,7 +7,7 @@
   padding: 0 4.8rem;
 
   &__logo {
-    height: 2.2rem;
+    @include logo;
   }
 
   &__nav-list {
